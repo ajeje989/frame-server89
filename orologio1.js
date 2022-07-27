@@ -1,5 +1,5 @@
-// OROLOGIO DI LUSSO DI ROVITTI 
-function//TIMER draw(){
+//OROLOGIO DI LUSSO DI ROVITTI .. CREATO DA ROVITTI 
+function draw(){
   for(i=0;i<60;i++){
     D = (i<10) ? '0'+i : i;
     $('#s').append('<li data-item='+D+'>'+D+'</li>');
