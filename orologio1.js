@@ -83,4 +83,3 @@ $(document).ready(function(){
     $(this).toggleClass('off');
   });
 });
-</script>
