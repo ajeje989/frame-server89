@@ -13,12 +13,49 @@
      *{
    cursor: url(https://i.imgur.com/DhYh6QJ.png),auto;
 }
+  .container {
+    position: absolute;
+    top: 25vh;
+    left: 3vh;
+}
+  
 #groupBackgroundFrame {cursor: url(https://i.imgur.com/DhYh6QJ.png),auto;}
 
 </style>
-
+    
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src='https://softvelum.com/player/releases/sldp-v2.19.2.min.js' type='text/javascript'></script>
   </head>
   <body>
 
+    <div class="container">
+      
+      
+           <div id='sldp_player_wrapper'></div>
+        <script>
+          document.addEventListener('DOMContentLoaded', initPlayer);
+          var sldpPlayer;
+          function initPlayer(){
+            sldpPlayer = SLDP.init({
+              container: 'sldp_player_wrapper',
+              stream_url: "wss://dash.server89.it/live/radiostudioone",
+              height: 500,
+              width: 'parent',
+              buffering: 500,
+              muted: true,
+              autoplay: 'false'
+            });
+
+          };
+
+          function removePlayer(){
+            sldpPlayer.destroy()
+          }
+        </script>
+      
+    </div>
+    
+    
+    
   </body>
 </html>
