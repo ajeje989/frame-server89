@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Engagement&family=Oswald:wght@200&family=Rammetto+One&display=swap" rel="stylesheet">
+<title>STELLA CADENTE HALLOWEEN</title>
+</head>
+<head>
+	<div class='spider_4'>
+		<div class="jd__sun"></div>
+		<div class='eye left'></div>
+		<div class='eye right'></div>
+		<span class='leg left'></span>
+		<span class='leg left'></span>
+		<span class='leg left'></span>
+		<span class='leg left'></span>
+		<span class='leg right'></span>
+		<span class='leg right'></span>
+		<span class='leg right'></span>
+		<span class='leg right'></span>
+	</div>
+<!-- nuvem -->
+	<body>
+
+
+
+
+
+    <div style="position: absolute; right: 0px; transform: scaleX(-1);
+    top: 130px; width:100%; z-index:0;">
+        <marquee direction="right">
+    <img src="https://i.postimg.cc/KzBw7tz8/cloud1.png" width="auto">
+    </marquee>
+    </div>
+
+</body>
+<style>
+
+:root{
+    --font-1: 'Engagement', cursive;
+    --font-2: 'Oswald', sans-serif;
+    --font-3: 'Rammetto One', cursive;
+    --font-4: 'Cookie', cursive;
+}
+:before,
+:after{
+    content:'';
+    position:absolute;
+}
+canvas{
+    position:absolute;
+    top:25%;
+    left:0;
+}
+.jd__scene,
+.jd__app,
+.jd__wave{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    left:0;
+}
+.jd__scene img{
+    position:absolute;
+}
+.jd__cloud1{
+    width:450px;
+    top:100px;
+    left:0;
+    transform:translateX(-100%);
+    animation:move 60s linear infinite;
+}
+.jd__cloud2{
+    width:550px;
+    top:80px;
+    left:0;
+    transform:translateX(-100%);
+    animation:move 80s linear infinite;
+}
+.jd__cloud3{
+    width:600px;
+    top:110px;
+    left:0;
+    transform:translateX(-100%);
+    animation:move 70s linear infinite;
+}
+.jd__cloud4{
+    width:450px;
+    top:100px;
+    left:0;
+    transform:translateX(-100%);
+    animation:move 50s linear infinite;
+    animation-delay:-40s;
+}
+.jd__cloud5{
+    width:750px;
+    top:100px;
+    left:0;
+    transform:translateX(-100%);
+    animation:move 80s linear infinite;
+    animation-delay:-30s;
+}
+.jd__cloud6{
+    width:600px;
+    top:110px;
+    left:0;
+    transform:translateX(-100%);
+    animation:move 70s linear infinite;
+    animation-delay:-22s;
+}
+@keyframes move{
+    0%{
+        transform:translateX(-100%) scale(1);
+    }
+    0%{
+        transform:translateX(calc(100vw + 100%)) scale(1.2);
+    }
+}
+
+
+ [class*="spider"] {
+  position: absolute;
+  height: 40px;
+  width: 50px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 40px 0 0 0;
+  background: #030202;
+}
+[class*="spider"] *, [class*="spider"]:before, [class*="spider"]:after, [class*="spider"] :after, [class*="spider"] :before {
+  position: absolute;
+  content: "";
+}
+[class*="spider"]:before {
+  width: 1px;
+  background: #5f2496;
+  left: 50%;
+  top: -600px;
+  height: 600px;
+}
+[class*="spider"] .eye {
+  top: 16px;
+  height: 14px;
+  width: 12px;
+  background: #ffa800;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+[class*="spider"] .eye:after {
+  top: 6px;
+  height: 5px;
+  width: 5px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: black;
+}
+[class*="spider"] .eye.left {
+  left: 14px;
+}
+[class*="spider"] .eye.left:after {
+  right: 3px;
+}
+[class*="spider"] .eye.right {
+  right: 14px;
+}
+[class*="spider"] .eye.right:after {
+  left: 3px;
+}
+[class*="spider"] .leg {
+  top: 6px;
+  height: 12px;
+  width: 14px;
+  border-top: 2px solid #000000;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  z-index: -1;
+}
+[class*="spider"] .leg.left {
+  left: -8px;
+  -moz-transform-origin: top right;
+  -ms-transform-origin: top right;
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
+  -moz-transform: rotate(36deg) skewX(-20deg);
+  -ms-transform: rotate(36deg) skewX(-20deg);
+  -webkit-transform: rotate(36deg) skewX(-20deg);
+  transform: rotate(36deg) skewX(-20deg);
+  border-left: 2px solid #000000;
+  -moz-border-radius: 60% 0 0 0;
+  -webkit-border-radius: 60%;
+  border-radius: 60% 0 0 0;
+  -moz-animation: legs-wriggle-left 1s 0s infinite;
+  -webkit-animation: legs-wriggle-left 1s 0s infinite;
+  animation: legs-wriggle-left 1s 0s infinite;
+}
+[class*="spider"] .leg.right {
+  right: -8px;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  -moz-transform: rotate(-36deg) skewX(20deg);
+  -ms-transform: rotate(-36deg) skewX(20deg);
+  -webkit-transform: rotate(-36deg) skewX(20deg);
+  transform: rotate(-36deg) skewX(20deg);
+  border-right: 2px solid #000000;
+  -moz-border-radius: 0 60% 0 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 60% 0 0;
+  -moz-animation: legs-wriggle-right 1s 0.2s infinite;
+  -webkit-animation: legs-wriggle-right 1s 0.2s infinite;
+  animation: legs-wriggle-right 1s 0.2s infinite;
+}
+[class*="spider"] .leg:nth-of-type(2) {
+  top: 14px;
+  left: -11px;
+  -moz-animation: legs-wriggle-left 1s 0.8s infinite;
+  -webkit-animation: legs-wriggle-left 1s 0.8s infinite;
+  animation: legs-wriggle-left 1s 0.8s infinite;
+}
+[class*="spider"] .leg:nth-of-type(3) {
+  top: 22px;
+  left: -12px;
+  -moz-animation: legs-wriggle-left 1s 0.2s infinite;
+  -webkit-animation: legs-wriggle-left 1s 0.2s infinite;
+  animation: legs-wriggle-left 1s 0.2s infinite;
+}
+[class*="spider"] .leg:nth-of-type(4) {
+  top: 31px;
+  left: -10px;
+  -moz-animation: legs-wriggle-left 1s 0.4s infinite;
+  -webkit-animation: legs-wriggle-left 1s 0.4s infinite;
+  animation: legs-wriggle-left 1s 0.4s infinite;
+}
+[class*="spider"] .leg:nth-of-type(6) {
+  top: 14px;
+  right: -11px;
+  -moz-animation: legs-wriggle-right 1s 0.4s infinite;
+  -webkit-animation: legs-wriggle-right 1s 0.4s infinite;
+  animation: legs-wriggle-right 1s 0.4s infinite;
+}
+[class*="spider"] .leg:nth-of-type(7) {
+  top: 22px;
+  right: -12px;
+  -moz-animation: legs-wriggle-right 1s 0.7s infinite;
+  -webkit-animation: legs-wriggle-right 1s 0.7s infinite;
+  animation: legs-wriggle-right 1s 0.7s infinite;
+}
+[class*="spider"] .leg:nth-of-type(8) {
+  top: 31px;
+  right: -10px;
+  -moz-animation: legs-wriggle-right 1s 0.3s infinite;
+  -webkit-animation: legs-wriggle-right 1s 0.3s infinite;
+  animation: legs-wriggle-right 1s 0.3s infinite;
+}
+
+
+.spider_4 {
+  right: 10.2%;
+  margin-top: 50px;
+  -moz-animation: spider-move-4 5s infinite;
+  -webkit-animation: spider-move-4 5s infinite;
+  animation: spider-move-4 5s infinite;
+}
+
+
+@keyframes legs-wriggle-left {
+  0%, 100% {
+    -webkit-transform: rotate(36deg) skewX(-20deg);
+    transform: rotate(36deg) skewX(-20deg);
+  }
+  25%, 75% {
+    -webkit-transform: rotate(15deg) skewX(-20deg);
+    transform: rotate(15deg) skewX(-20deg);
+  }
+  50% {
+    -webkit-transform: rotate(45deg) skewX(-20deg);
+    transform: rotate(45deg) skewX(-20deg);
+  }
+}
+@keyframes legs-wriggle-right {
+  0%, 100% {
+    -webkit-transform: rotate(-36deg) skewX(20deg);
+    transform: rotate(-36deg) skewX(20deg);
+  }
+  25%, 75% {
+    -webkit-transform: rotate(-15deg) skewX(20deg);
+    transform: rotate(-15deg) skewX(20deg);
+  }
+  50% {
+    -webkit-transform: rotate(-45deg) skewX(20deg);
+    transform: rotate(-45deg) skewX(20deg);
+  }
+}
+
+
+
+@-moz-keyframes spider-move-4 {
+  0%, 100% {
+    margin-top: 222px;
+  }
+  46% {
+    margin-top: calc(222px + 36px);
+  }
+}
+@-webkit-keyframes spider-move-4 {
+  0%, 100% {
+    margin-top: 222px;
+  }
+  46% {
+    margin-top: calc(222px + 36px);
+  }
+}
+@keyframes spider-move-4 {
+  0%, 100% {
+    margin-top: 270px;
+  }
+  46% {
+    margin-top: calc(300px + 36px);
+  }
+}
+
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url('https://i.imgur.com/ABvMQl5.png')/*Wallpaper*/ center/cover fixed, #000
+}
+
+.container {
+  position: absolute;
+  top: 35vh;
+  left: 5vh;
+}
+
+@keyframes flicker {
+  0%    { opacity: 1; }
+  4%    { opacity: 0.1; }
+  6%    { opacity: 1; }
+  7%    { opacity: 0.1; }
+  9%    { opacity: 1; }
+  9%    { opacity: 0.1; }
+  10%   { opacity: 1; }
+  98%   { opacity: 1; }
+  100%  { opacity: 1; }
+}
+
+  #BUBBLELINE1 { animation: flicker 6s infinite 1s step-end; }
+  #BUBBLELINE2 { animation: flicker 6s infinite 2s step-end; }
+  #BUBBLELINE3 { animation: flicker 6s infinite 3s step-end; }
+
+</style>
+</head>
+
+</body>
+</html>
